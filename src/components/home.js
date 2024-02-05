@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TodoList = () => {
+const Home = () => {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
 
@@ -60,4 +60,4 @@ const TodoList = () => {
   );
 };
 
-export default TodoList;
+export default Home;

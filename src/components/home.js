@@ -1,26 +1,26 @@
-import Form from "react-bootstrap/Form";
-
 const Home = () => {
-   return (
-      <>
-         <div>
-            <h1 className="text-center">Todo List</h1>
-            <input></input>
-            <button>Add</button>
-         </div>
-
-         <Form.Label htmlFor="inputPassword5">Password</Form.Label>
-         <Form.Control
-            type="password"
-            id="inputPassword5"
-            aria-describedby="passwordHelpBlock"
-         />
-         <Form.Text id="passwordHelpBlock" muted>
-            Your password must be 8-20 characters long, contain letters and
-            numbers, and must not contain spaces, special characters, or emoji.
-         </Form.Text>
-      </>
-   );
+  return (
+    <>
+      <div className="d-flex justify-content-center align-items-center text-light bg-byour">
+        <div className="mb-5 pb-5">
+          <h1 className="text-center">Todo List</h1>
+          <div className="d-flex flex-column jsutify-content-center align-items-center gap-2">
+            {/* start input Todo */}
+            <div className="d-flex flex-row gap-1">
+              <input></input>
+              <button>Add</button>
+            </div>
+            {/* end input Todo */}
+            <div className="d-flex flex-row gap-1">
+              <li>Membuat Aplikasi</li>
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Home;
